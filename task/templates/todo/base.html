@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'style/style.css' %}">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <title>todo | Django Rest Framework</title>
+</head>
+<body>
+  <div class="home-container">
+    <div class="container">
+      <div class="form-container">
+        <form method="POST" id="input-form">
+          <input placeholder="Create or Update Task..." type="text" id="input-title">
+          <input class="create-btn" title='Create or Update' type="submit" value="Click Me">
+        </form>
+      </div>
+      <div class="tasks-container"></div>
+    </div>
+  </div>
+
+  <script src="{% static 'script/http.js' %}"></script>
+  <script src="{% static 'script/app.js' %}"></script>
+</body>
+</html>
